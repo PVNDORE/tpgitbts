@@ -1,11 +1,10 @@
-
 public class fonction {
 	
 	
 	
-	public static void select(char ope) 
+	public static void select(char ope, int x, int y) 
 		{
-			int resultat;
+			int resultat = 0;
 			
 			if( ope == '+') 
 				{
