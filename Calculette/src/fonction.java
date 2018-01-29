@@ -1,60 +1,65 @@
 
 public class fonction {
-	char ope;
-	int resultat;
 	
-	if( ope == "+") 
+	
+	
+	public static void select(char ope) 
 		{
-			resultat = addition(x, y);
+			int resultat;
+			
+			if( ope == '+') 
+				{
+					resultat = addition(x, y);
+				}
+			else if( ope == '-') 
+				{
+					resultat = soustraction(x, y);
+				}
+			else if(ope == '*')
+				{
+					resultat = multiplication(x, y);
+				}
+			else if(ope == '/')
+				{
+					resultat = division(x, y);
+				}
+			
+			System.out.println("le résultat est : " + resultat);
 		}
-	else if( ope == "-") 
+
+
+
+	public static int addition(int x, int y)
 		{
-			resultat = soustraction(x, y);
+			int somme = 0;
+			somme = x + y;
+			
+			return somme;
 		}
-	else if(ope == "*")
+
+	public static int soustraction(int x, int y)
 		{
-			resultat = multiplication(x, y);
+			int difference = 0;
+			difference = x - y;
+			
+			return difference;
 		}
-	else if(ope == "/")
+
+	public static int multiplication(int x, int y)
 		{
-			resultat = division(x, y);
+			int produit = 0;
+			produit = x * y;
+			
+			return produit;
 		}
-	
-	System.out.println("le résultat est : " resultat);
+
+	public static int division(int x, int y)
+		{
+			int quotient = 0;
+			quotient = x / y;
+			
+			return quotient;
+		}
 }
-
-
-public static int addition(int x, int y)
-	{
-		int somme = 0;
-		somme = x + y;
-		
-		return somme;
-	}
-
-public static int soustraction(int x, int y)
-{
-	int difference = 0;
-	difference = x - y;
-	
-	return difference;
-}
-
-public static int multiplication(int x, int y)
-{
-	int produit = 0;
-	produit = x * y;
-	
-	return produit;
-}
-
-public static int division(int x, int y)
-{
-	int quotient = 0;
-	quotient = x / y;
-	
-	return quotient;
-}
-
 
 
